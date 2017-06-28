@@ -136,9 +136,9 @@ Django
 		<title>TreasureGram</title>
 	  </head>
 	  <body>
-        <h1>TreasureGram</h1>
+            <h1>TreasureGram</h1>
 	  </body>
-    </html>
+   	 </html>
 
 	```
 	
