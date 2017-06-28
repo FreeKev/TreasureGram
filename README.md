@@ -1,6 +1,4 @@
-Django
-
-# Lets create Treasuregram!
+# Lets create Treasuregram w/ Django!
 
 1. Create a Django application with the following command: 
 
