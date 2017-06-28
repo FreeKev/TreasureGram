@@ -199,15 +199,15 @@ Django
 4. Lets add some conditional checking to format our values.  If we have a 0 value treasure, lets set it to display 'Unknown':
 
 	```html
-{% for treasure in treasures %}
-      <p>Name: {{ treasure.name }}</p>
-      {% if treasure.value > 0 %}
-        <p>Value: {{ treasure.value}}</p>
-      {% else %}
-        <p>Value: Unknown</p>
-      {% endif%}
-      <hr />
-    {% endfor %}
+	{% for treasure in treasures %}
+      	  <p>Name: {{ treasure.name }}</p>
+      	{% if treasure.value > 0 %}
+          <p>Value: {{ treasure.value}}</p>
+      	{% else %}
+          <p>Value: Unknown</p>
+      	{% endif%}
+      	  <hr />
+	{% endfor %}
 	
 	```
 	
