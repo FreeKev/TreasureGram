@@ -27,12 +27,12 @@
 
 	This will create a folder for `main_app` and many support files inside.  Familiarize yoruself with these files before heading on.
 
-4.  We will now work on our first view. A view is a function that takes in a web request and resturns a web response.
+4.  We will now work on our first view. A view is a function that takes in a web request and returns a web response.
 
 	```python
 	# main_app/views.py
-	from django shortcuts import render
-	from django http import HttpResponse
+	from django.shortcuts import render
+	from django.http import HttpResponse
 
 	def index(request):
 		return HttpResponse('<h1>Hello Explorers!</h1>')
