@@ -134,13 +134,9 @@
 		<title>TreasureGram</title>
 	  </head>
 	  <body>
-<<<<<<< HEAD
         <h1>TreasureGram</h1>
         <hr />
         <footer>All Rights Reserved, TreasureGram 2017</footer>
-=======
-            <h1>TreasureGram</h1>
->>>>>>> b9b54863e2dd6098cdd411e5d255ff0118a962a9
 	  </body>
    	 </html>
 
