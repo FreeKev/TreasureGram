@@ -137,6 +137,8 @@ Django
 	  </head>
 	  <body>
         <h1>TreasureGram</h1>
+        <hr />
+        <footer>All Rights Reserved, TreasureGram 2017</footer>
 	  </body>
     </html>
 
@@ -331,3 +333,29 @@ You should now have a boring but completely functional application that will pul
 5.  Reload your page and you should see a single Treasure displayed from your database!  You're a wizard, Harry!
 
 ![](https://media.giphy.com/media/IN8gg3Gci335S/giphy.gif)
+
+# I am the ADMIN!
+
+6.  One last really really REALLY neat thing:  Django comes with a admin back-end administrator cooked in!  Let's use it!
+
+We need to create a super user ( a mega admin ) to allow us to log in initially and create other users and data.  Run this command in the terminal:
+
+	```bash
+		python manage.py createsuperuser
+	```
+
+	You will prompted to enter a username, email address, and a password. You are now creating a 'web master' for your site!
+	
+	Now go to your webpage and head over to the `/admin` route to see an admin portal!  
+	
+7.  We need to **register** our Treasure model in our admin page to be able to see them in this new cool view.  To do this let's alter our admin.py page to allow our model to be seen.
+
+	```python
+	from django.contrib import admin
+	from .models import Treasure
+	
+	# Register your models here.
+	admin.site.register(Treasure)
+	```
+	
+8.  Now when we go back to our admin page, we'll see a link to our Treasure model.  We can add, update, and remove Treasure models at our leisure from this section.  Neat!
