@@ -165,6 +165,22 @@ We will now create a url path in `urls.py` for our like button:
 url(r'^like_treasure/$', views.like_treasure, name='like_treasure')
 ```
 
+Now we can update our `views.py` to execute a function that will update our like count:
+
+```python
+def like_treasure(request):
+    treasure_id = request.GET.get('treasure_id', None)
+
+    likes = 0
+    if (treasure_id):
+        treasure = Treasure.objects.get(id=int(treasure_id))
+        if treasure is not None:
+            likes = treasure.likes + 1
+            treasure.likes = likes
+            treasure.save()
+    return HttpResponse(likes)
+```
+
 Update our button listener to handle a successful return of the like quantity:
 
 ```javascript
