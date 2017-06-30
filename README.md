@@ -255,10 +255,10 @@ You should now have a boring but completely functional application that will pul
 	from django.db import models
 
 	class Trasure(models.Model):
-	    name = models.charField(max_length=100)
+	    name = models.CharField(max_length=100)
 	    value = models.DecimalField(max_digits=10, decimal_places=2)
-	    material = models.charField(max_length=100)
-	    location = models.charField(max_length=100)
+	    material = models.CharField(max_length=100)
+	    location = models.CharField(max_length=100)
 
 	```
 
