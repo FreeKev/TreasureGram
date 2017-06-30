@@ -18,7 +18,7 @@ The pattern of creating a new url in `urls.py`, a new view function in `views.py
 	
 	urlpatterns = [
 	    url(r'^$', index),
-	    url(r'^([0-9]+)/$'), show, name = 'show')
+	    url(r'^([0-9]+)/$', show, name = 'show')
 	]
 	
 	```
