@@ -156,7 +156,7 @@ Let us add the ability to create Treasures in our application.  We will now stud
 	```python
 	...
 	from .forms import TreasureForm
-	from django.http import HttpResponse
+	from django.http import HttpResponse, HttpResponseRedirect
 	
 	...
 	def post_treasure(request):
