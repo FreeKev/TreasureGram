@@ -167,7 +167,7 @@ Lets start with the model. Update our `models.py` to include a likes field:
   ...
 ```
 
-We will then make then run a migration to make this chagne reflect in our database:
+We will then make then run a migration to make this change reflect in our database:
 
 ```bash
   python manage.py makemigrations
