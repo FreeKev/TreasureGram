@@ -14,7 +14,7 @@
 2.  To see a barebones website automatically created for us run the following command:
 
 	```bash
-		python manage.py runserver
+		python3 manage.py runserver
 	```
 
 	Head to the location given in your terminal and you should see a boilerplate greeting page for Django!
@@ -22,7 +22,7 @@
 3.  We have created a project for django but not yet our **application**. In Django a project consists of many smaller applications (think of them as widgets.) Lets use the manage.py utility `startapp` to create our first `app` inside our Django `project`:
 
 	```bash
-		python manage.py startapp main_app
+		python3 manage.py startapp main_app
 	```
 
 	This will create a folder for `main_app` and many support files inside.  Familiarize yoruself with these files before heading on.
@@ -268,14 +268,14 @@ You should now have a boring but completely functional application that will pul
 	- Enter the following into your terminal:
 
 		```bash
-		python manage.py makemigrations
+		python3 manage.py makemigrations
 		```
 	This wil prepare a file to execute your database changes
 
 	- Enter this command to execute the migration:
 
 		```bash
-		python manage.py migrate
+		python3 manage.py migrate
 		```
 	Separate steps let you review the migration before you actually run `migrate`
 3.  Lets jump into the `Django Interactive Shell` to play with the database for our Treasures!
@@ -283,7 +283,7 @@ You should now have a boring but completely functional application that will pul
 	In your terminal:
 
 	```bash
-	python manage.py shell
+	python3 manage.py shell
 	```
 
 	Now lets connect to our Treasure db:
@@ -340,7 +340,7 @@ You should now have a boring but completely functional application that will pul
 We need to create a super user ( a mega admin ) to allow us to log in initially and create other users and data.  Run this command in the terminal:
 
 	
-		python manage.py createsuperuser
+		python3 manage.py createsuperuser
 	
 
 	You will prompted to enter a username, email address, and a password. You are now creating a 'web master' for your site!
