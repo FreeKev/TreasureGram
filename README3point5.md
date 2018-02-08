@@ -23,6 +23,7 @@ Lets add the `login_view` function in `views.py`:
 ```python
 ...
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
 from .forms import TreasureForm, LoginForm
 ...
 def login_view(request):
