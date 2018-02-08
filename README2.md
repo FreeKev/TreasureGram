@@ -4,7 +4,7 @@ We have created an application that will display our treasures found in our expl
 
 
 # Read
-So far we have collected their names, values, material, and location we happened up them.  That's a lot of information to have in one place, so we like to keep it simple in our index view.  In our detail or 'show' page we will give each Trasure its own view to give us an uncluttered breakdown of its attributes.  
+So far we have collected their names, values, material, and location we happened upon them.  That's a lot of information to have in one place, so we like to keep it simple in our index view.  In our detail or 'show' page we will give each Treasure its own view to give us an uncluttered breakdown of its attributes.  
 
 The pattern of creating a new url in `urls.py`, a new view function in `views.py`, and a new html file in `/template` will apply here.
 
