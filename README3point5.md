@@ -116,6 +116,16 @@ urlpatterns = [
 
 ]
 ```
+
+Next is the view! Remember a good pattern is url, form (if needed), view, then template. So! In `views.py`:
+
+```python
+def profile(request, username):
+    user = User.objects.get(username=username)
+    treasures = Treasure.objects.filter(user=user)
+    return render(request, 'profile.html', {'username': username, 'treasures': treasures})
+```
+
 Then create the template `profile.html`:
 
 ```html
