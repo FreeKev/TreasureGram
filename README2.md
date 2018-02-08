@@ -213,10 +213,10 @@ page! We can now create new Treasures!
 7.  Update our `views.py` file to allow us to use this smaller codeform:
 
 	```python
-	#main_app/vies.py
+	#main_app/views.py
 	def post_treasure(request):
 	    form = TreasureForm(request.POST)
 	    if form.is_valid():
-	        treasure.save(commi = True)
+	        treasure.save(commit = True)
 	    return HttpResponseRedirect('/')
 	``` 
