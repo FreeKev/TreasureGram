@@ -123,7 +123,7 @@ Next is the view! Remember a good pattern is url, form (if needed), view, then t
 ```python
 def profile(request, username):
     user = User.objects.get(username=username)
-    treasures = Treasure.objects.filter(user=user)
+    treasures = Treasure.objects.all()
     return render(request, 'profile.html', {'username': username, 'treasures': treasures})
 ```
 
@@ -135,13 +135,19 @@ Then create the template `profile.html`:
 
 {% block content %}
 
-<h1>{{ username }}'s collection:</h1>
+<h4>{{ username }}'s collection:</h4>
 
+<hr/>
 {% for treasure in treasures %}
 <a href="/{{treasure.id}}">
-  <h3>{{ treasure.name }}</h3>
+<p>Name: {{ treasure.name }}</p>
+{% if treasure.value > 0 %}
+<p>Value: {{ treasure.value}}</p>
+{% else %}
+<p>Value: Unknown</p>
+{% endif%}
 </a>
-
+<hr/>
 {% endfor %}
 
 {% endblock %}
