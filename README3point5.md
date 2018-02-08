@@ -170,8 +170,8 @@ Lets start with the model. Update our `models.py` to include a likes field:
 We will then make then run a migration to make this change reflect in our database:
 
 ```bash
-  python manage.py makemigrations
-  python manage.py migrate
+  python3 manage.py makemigrations
+  python3 manage.py migrate
 ```
 
 Now we can create a like button in our `index.html` page. Place this inside our `treasures` iterator:
