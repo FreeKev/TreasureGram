@@ -56,8 +56,8 @@ The pattern of creating a new url in `urls.py`, a new view function in `views.py
 	
 	    <h2> Name: {{ treasure.name}}</h1>
 	    <p> Value: {{ treasure.value }}</p>
-	    <p> Material{{ treasure.material }}</p>
-	    <p> Location{{ treasure.location }}</p>
+	    <p> Material: {{ treasure.material }}</p>
+	    <p> Location: {{ treasure.location }}</p>
 	  </body>
 	</html>
 	```
