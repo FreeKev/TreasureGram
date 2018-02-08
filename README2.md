@@ -39,7 +39,7 @@ The pattern of creating a new url in `urls.py`, a new view function in `views.py
 	After we have made the DB call to retrieve our model, we will render a new view of the `show.html` template and pass in our model as an object for the template to use.
 	
 	
-3.  We will no create a `show.html` template html page to render our single model view:
+3.  We will now create a `show.html` template html page to render our single model view:
 
 	```html
 	<!-- main_app/templates/show.html -->
