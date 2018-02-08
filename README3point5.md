@@ -184,14 +184,14 @@ Now we can create a like button in our `index.html` page. Place this inside our 
 
 Let's also download the latest version of JQuery and place in it a `static/js` folder as well as a new `app.js` file.
 
-We will include our javascript files **below** our html in `base.html`:
+We will include our javascript files **below** our html in `base.html` (be mindful of the version you have an reference accordingly):
 
 ```html
 ...
 <footer>
   All Rights Reserved, TreasureGram 2017
 </footer>
-<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script> 
 <script src="{% static 'js/app.js' %}"></script>
 </body>
 </html>
