@@ -100,6 +100,42 @@ Finally, lets add the log in and log out functionality to our website. Lets add 
 
 Awesome! Now we have login and logout functionality and the ability to see if you're currently logged in!
 
+# What about that Profile?
+
+We link to the 'profile' url from out username display, now we need that url and template! At this point your `urls.py` should look like this:
+
+```python
+urlpatterns = [
+    url(r'^user/(\w+)/$', views.profile, name='profile'),
+    url(r'^([0-9]+)/$', views.show, name="show"),
+    url(r'^post_url/$', views.post_treasure, name="post_treasure"),
+    url(r'^like_treasure/$', views.like_treasure, name='like_treasure'),
+    url(r'^$', views.index),
+    url(r'^login/$', views.login_view, name="login"),
+    url(r'^logout/$', views.logout_view, name="logout"),
+
+]
+```
+Then create the template `profile.html`:
+
+```html
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<h1>{{ username }}'s collection:</h1>
+
+{% for treasure in treasures %}
+<a href="/{{treasure.id}}">
+  <h3>{{ treasure.name }}</h3>
+</a>
+
+{% endfor %}
+
+{% endblock %}
+```
+
 # Like Button, anyone?
 
 Lets add some fun to our site! Lets allow users to like treasures!
