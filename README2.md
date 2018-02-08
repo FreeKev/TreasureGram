@@ -13,12 +13,11 @@ The pattern of creating a new url in `urls.py`, a new view function in `views.py
 	```python
 	# main_app/urls.py
 	from django.conf.urls import url
-	from views import index
-	from views import show
+	from . import views
 	
 	urlpatterns = [
-	    url(r'^$', index),
-	    url(r'^([0-9]+)/$', show, name = 'show')
+	    url(r'^$', views.index, name='index'),
+	    url(r'^([0-9]+)/$', views.show, name='show')
 	]
 	
 	```
