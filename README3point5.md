@@ -1,6 +1,6 @@
 # Django User Login
 
-To implement a user login systme, we'll follow the pattern of URL, Form, View, then Template.
+To implement a user login system, we'll follow the pattern of URL, Form, View, then Template.
 
 In `urls.py` add the login route:
 
