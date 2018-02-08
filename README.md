@@ -221,11 +221,11 @@
 
 	```css
 	h1 {
-		color: green;
+		color: turquoise;
 	}
 	```
 
-7.  In our index.html we need to connect our static folder and files to our templating language. We do so by declaring our usage of static files at the top fo the page. We'll also show you how to link your style.css file as well:
+7.  In our index.html we need to connect our static folder and files to our templating language. We do so by declaring our usage of static files at the top of the page. We'll also show you how to link your style.css file as well:
 
 	```html
 	{% load staticfiles %}
@@ -239,7 +239,7 @@
 	```
 
 
-8.  We can also add our good friend bootstrap!  Download a copy of the minified css and include inside your static folder and link it the same way you would link your style.css.
+8.  We can also add our good friend bootstrap or materialize!  Download a copy of the minified css and include inside your static folder and link it the same way you would link your style.css.
 
 
 
@@ -339,9 +339,9 @@ You should now have a boring but completely functional application that will pul
 
 We need to create a super user ( a mega admin ) to allow us to log in initially and create other users and data.  Run this command in the terminal:
 
-	```bash
+	
 		python manage.py createsuperuser
-	```
+	
 
 	You will prompted to enter a username, email address, and a password. You are now creating a 'web master' for your site!
 
