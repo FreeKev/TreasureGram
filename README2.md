@@ -141,14 +141,13 @@ Let us add the ability to create Treasures in our application.  We will now stud
 
 	```python
 	from django.conf.urls import url
-	from views import index
-	from views import show
-	from views import post_treasure
+	from . import views
+	
 	
 	urlpatterns = [
 	    url(r'^$', index),
-	    url(r'^([0-9]+)/$', show, name="show"),
-	    url(r'^post_url/$', post_treasure, name="post_treasure")
+	    url(r'^([0-9]+)/$', views.show, name="show"),
+	    url(r'^post_url/$', views.post_treasure, name="post_treasure")
 	]
 	```
 
