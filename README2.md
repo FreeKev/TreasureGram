@@ -34,7 +34,7 @@ The pattern of creating a new url in `urls.py`, a new view function in `views.py
     return render(request, 'show.html', {'treasure': treasure}) 
 	```
 	
-	You'll notice that we are searching by id.  Django automatically assigns our mdoels incrementing id numbers to organize our tables.  Neat!  That way we can look up every single treasure by their unique `id` given to us.  That `id` will travel with every model so we don't have to worry about assigning them one or trying to maintain it in the back-end!  SO SWEET! 
+	You'll notice that we are searching by id.  Django automatically assigns our models incrementing id numbers to organize our tables.  Neat!  That way we can look up every single treasure by their unique `id` given to us.  That `id` will travel with every model so we don't have to worry about assigning them one or trying to maintain it in the back-end!  SO SWEET! 
 	
 	After we have made the DB call to retrieve our model, we will render a new view of the `show.html` template and pass in our model as an object for the template to use.
 	
